@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Trajan';
+  src: url('../fonts/TrajanProBold.otf?v=4.1.0');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.trj {
+    display: inline-block;
+    font-family: Trajan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-top: 10px;
+    color: #fff;
+    line-height: 80%;
+    text-align: left;
+}
+
+.trj:hover, .trj:focus, .trj:active {
+    text-decoration: none;
+    color: #fff;
+}
+ 
+.trj-small {
+    font-family: Trajan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+    line-height: 80%;
+    text-align: left;
+    color: #1e4c86;
+}
+
+.trj-small:hover, .trj-small:focus, .trj-small:active {
+    text-decoration: none;
+    color: #1e4c86;
+}
+
+.logo:hover, .logo:focus, .logo:active {
+    text-decoration: none;
+}

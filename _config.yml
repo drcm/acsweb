@@ -1,0 +1,50 @@
+url: https://drcm.github.io
+baseurl: 
+
+# Site settings
+title: Arches Computing Systems
+email: your-email@domain.com
+description: "Arches Computing Systems"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 1e4c86
+  secondary: 5083c4
+  secondary-dark: 333
+
+# Team names, titles and social links
+people:
+- name: Kwong Ho, B.A.Sc, MBA, JD, PEng
+  pic: kyh
+  position: CEO
+  bio: Kwong Ho is responsible for the overall operations of the company. He works with customers and suppliers to establish strategic partnerships. Prior to Arches Computing Systems, Kwong was the President and CEO of Digital V6 Corp. and the VP of Operations at Concord Idea Corp. where the company was recognized in Deloitte & Touche's Canadian FAST50. Kwong has extensive technical marketing experience as VP Marketing at ASPRO Technologies and Field Applications Engineer for various companies in the electronics industry. Kwong earned his B.A.Sc.(Engineering Science) and M.B.A.(Rotman) from the University of Toronto, and J.D. from the University of Western Ontario.
+
+- name: Dr. Paul Chow, Ph.D
+  pic: pc
+  position: CTO
+  bio: Dr. Chow is a Professor in the Department of Electrical and Computer Engineering at the University of Toronto where his current research is focused on heterogenous architectures using multi-FPGA systems and high-performance processors. He has worked on commercial ASIC designs and managed a design and verification team of over 30 people at AcceLight Networks, where he was a co-founder. He also has experience in the design and implementation of sophisticated CAD flows. Dr. Chow is currently on the Board of Directors at CMC Microsystems.
+
+- name: Dr. Chris Madill, Ph.D
+  pic: cm
+  position: Systems Architect
+  bio: Dr. Madill is the lead architect at Arches Computing Systems. He has many years experience in the development of high-performance computing architectures, both in software and in hardware. His expertise ranges from ultra-low latency financial application to massively parallel simulation of biomolecular systems. Dr. Madill earned a B.Sc (Honours) in Computer Science and Biochemistry from Queen's University and Ph.D in Biochemistry from the University of Toronto. In addition, he has extensive development experience from earlier work at Cognos, Molecular Mining, and The Hospital for Sick Children.
+
+- name: Jimmy Lin
+  pic: jl
+  position: ???
+  bio: Get bio from Jimmy.
+
+# Postal address (add as many lines as necessary)
+address:
+  line: 708-222 Spadina Ave
+  line: Toronto, Ontario
+  line: M5T 2A2
+
+location:
+  name: 545 King St. W
+  latitude: 43.644445
+  longitude: -79.398858
+
+# Build settings
+markdown: kramdown
+permalink: pretty
