@@ -31,8 +31,8 @@ people:
 
 - name: Jimmy Lin
   pic: jl
-  position: 
-  bio: Get bio from Jimmy.
+  position: Hardware Engineer
+  bio: Jimmy Lin is a hardware engineer at Arches Computing Systems. He gained extensive FPGA design experience through his B.Eng. at Shanghai Jiao Tong University and his MASc at the University of Toronto. Before joining Arches, Jimmy was a member of the SDAccel Development Enviroment team at the Xilinx San Jose research labs. He currently specializes in the development of IP cores and low-latency networking stacks.
 
 # Postal address (add as many lines as necessary)
 address:
