@@ -30,7 +30,7 @@ people:
   position: Systems Architect
   bio: Dr. Madill is the lead architect at Arches Computing Systems. He has many years experience in the development of high-performance computing architectures, both in software and in hardware. His expertise ranges from ultra-low latency financial application to massively parallel simulation of biomolecular systems. Dr. Madill earned a B.Sc (Honours) in Computer Science and Biochemistry from Queen's University and a Ph.D in Biochemistry from the University of Toronto. Prior to completing his Ph.D, he gained extensive development experience at Cognos, Molecular Mining, and The Hospital for Sick Children.
 
-- name: Jimmy Lin
+- name: Jimmy Lin, M.A.Sc
   pic: jl
   position: Hardware Engineer
   bio: Jimmy Lin is a hardware engineer at Arches Computing Systems. He gained extensive FPGA design experience through his B.Eng. at Shanghai Jiao Tong University and his MASc at the University of Toronto. Before joining Arches, Jimmy was a member of the SDAccel Development Enviroment team at the Xilinx San Jose research labs. He currently specializes in the development of IP cores and low-latency networking stacks.
