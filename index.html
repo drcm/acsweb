@@ -1,73 +1,20 @@
 ---
-title: High-Performance FPGA Solutions
-description: Track and optimize your sales team in real time
+layout: default
 ---
-<section class="hero">
-	<div class="text-container">
-		<h1 class="editable"><strong>Highly Configurable</strong> FPGA solutions</h1>
-        <p class="subtext editable">Combining the Performance, Scalability, and Reliability of FPGAs<br>
-            with the Benefits of Custom-Built Applications</p>
-	</div>
-</section>
 
-<div class="content">
-	<section>
-		<div class="container flex indented">
-			<div class="text editable">
-				<h2><strong style="color:{{ site.arches_blue }}">High Performance</strong> FPGA Technology</h2>
-                <p>ArchES Computing Systems develops Ultra High-Performance financial applications. 
-                Specializing in FPGA design, ArchES builds applications that execute several times
-                faster than those running on traditional servers.
-			</div>
-			<div class="image">
-			    <img src="{{ site.baseurl }}/images/U280_Hero.jpg" alt="Alveo U280 FPGA" />
-			</div>
-		</div>
-	</section>
+<div class="home">
 
-	<section>
-		<div class="container flex indented">
-			<div class="text editable">
-                <h2><strong style="color:{{ site.arches_blue }}">Highly Configurable</strong> Products and Services</h2>
-                <p>ArchES has developed FinOS, an FPGA Operating System designed specifically
-                for low-latency financial applications. FinOS applications can be rapidly developed
-                and are extensively customizable, allowing completely bespoke solutions that are 
-                optimized for performance as well as compatibility with existing infrastructure. </p>
-			</div>
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/RFSoC-Gen2.jpg" alt="ZYNQ FPGA" />
-			</div>
-		</div>
-	</section>
+  <h1>Posts</h1>
 
-	<section>
-		<div class="container flex indented">
-			<div class="text editable">
-                <h2>Years of <strong style="color:{{ site.arches_blue }}">Technological Innovation</strong></h2>
-                <p>Established in 2003, ArchES is a leader in FPGA and Heterogeneous Computing Technology.
-                ArchES is based in Toronto, Canada.</p>
-			</div>
-			<div class="image">
-                <img src="{{ site.baseurl }}/images/TorontoFinancialDistrict.jpg" alt="Toronto Financial District" />
-			</div>
-		</div>
-	</section>
-    
-    <!--
-	<section class="testimonial">
-		<div class="container flex">
-			<div class="testimonial-block">
-				<div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable"></div>
-				<blockquote>
-					<p class="editable">Hydra has shaped the business we have today. We have a repeatable sales process and a strategy to scale our team. I recommend Hydra to any business looking to improve their sales.</p>
-					<p class="editable author">Jim James - CEO of Global Corp.</p>
-				</blockquote>
-			</div>
-		</div>
-	</section>
-    -->
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-	<section class="bottom-cta">
-		<div class="button alt"><a href="/contact/">Contact Us</a></div>
-	</section>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>

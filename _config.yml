@@ -1,90 +1,51 @@
-# ----
-# Site
+url: https://drcm.github.io
+#baseurl: /acsweb
+baseurl: 
 
-title: ArchES Computing Systems
-url: "https://drcm.github.io"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+# Site settings
+title: Arches Computing Systems
+email: your-email@domain.com
+description: "Arches Computing Systems"
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: 
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 1e4c86
+  secondary: 5083c4
+  secondary-dark: 333
 
-# Leaflet
-leaflet: leaflet@1.6.0
+# Team names, titles and social links
+people:
+- name: Kwong Ho, B.A.Sc, MBA, JD, PEng
+  pic: kyh
+  position: CEO
+  bio: Kwong Ho is responsible for the overall operations of the company. He works with customers and suppliers to establish strategic partnerships. Prior to Arches Computing Systems, Kwong was the President and CEO of Digital V6 Corp. and the VP of Operations at Concord Idea Corp. where the company was recognized in Deloitte & Touche's Canadian FAST50. Kwong has extensive technical marketing experience as VP Marketing at ASPRO Technologies and Field Applications Engineer for various companies in the electronics industry. Kwong earned his B.A.Sc.(Engineering Science) and M.B.A.(Rotman) from the University of Toronto, and J.D. from the University of Western Ontario.
 
-# Colours
-arches_blue: "#1C4C81"
+- name: Dr. Paul Chow, Ph.D
+  pic: pc
+  position: CTO
+  bio: Dr. Chow is a Professor in the Department of Electrical and Computer Engineering at the University of Toronto where his current research is focused on heterogenous architectures using multi-FPGA systems and high-performance processors. He has worked on commercial ASIC designs and managed a design and verification team of over 30 people at AcceLight Networks, where he was a co-founder. He also has experience in the design and implementation of sophisticated CAD flows. Dr. Chow is currently on the Board of Directors at CMC Microsystems.
 
-# -----
-# Build
+- name: Dr. Chris Madill, Ph.D
+  pic: cm
+  position: Director, Product Development
+  bio: Dr. Madill is the lead architect at Arches Computing Systems. He has many years experience in the development of high-performance computing architectures, both in software and in hardware. His expertise ranges from ultra-low latency financial application to massively parallel simulation of biomolecular systems. Dr. Madill earned a B.Sc (Honours) in Computer Science and Biochemistry from Queen's University and a Ph.D in Biochemistry from the University of Toronto. Prior to completing his Ph.D, he gained extensive development experience at Cognos, Molecular Mining, and The Hospital for Sick Children.
 
-timezone: Etc/UTC
+- name: Jimmy Lin, M.A.Sc
+  pic: jl
+  position: Hardware Engineer
+  bio: Jimmy Lin is a hardware engineer at Arches Computing Systems. He gained extensive FPGA design experience through his B.Eng. at Shanghai Jiao Tong University and his MASc at the University of Toronto. Before joining Arches, Jimmy was a member of the SDAccel Development Enviroment team at the Xilinx San Jose research labs. He currently specializes in the development of IP cores and low-latency networking stacks.
 
-collections:
-  staff_members:
-    _hide_content: true
+# Postal address (add as many lines as necessary)
+address:
+  line: 708-222 Spadina Ave
+  line: Toronto, Ontario
+  line: M5T 2A2
 
-paginate: 10
-paginate_path: "/blog/:num/"
+location:
+  name: 545 King St. W
+  latitude: 43.644445
+  longitude: -79.398858
+
+# Build settings
+markdown: kramdown
 permalink: pretty
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 1500
-          height: 2500
-  -
-    scope:
-      path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "contact.html"
-    values:
-      full_width: true
-
-jekyll-archives:
-  enabled:
-    - categories
-
-plugins:
-  - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-
