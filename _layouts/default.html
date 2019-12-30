@@ -1,19 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 
-  {% include head.html %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		{% seo %}
+		{% feed_meta %}
 
-    <body id="page-top" class="index">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 
-    {% include header.html %}
-    {% include about.html %}
-    {% include products.html %}
-    {% include services.html %}
-    {% include team.html %}
-    {% include contact.html %}
-    {% include modals.html %}
-    {% include js.html %}
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
 
-    </body>
+        <!-- For the leaflet .css -->
+        {% if page.leaflet == true %}
+            <link href="https://unpkg.com/{{ site.leaflet }}/dist/leaflet.css" rel="stylesheet" />
+        {% endif %}
+
+        <!-- For the leaflet .js -->
+        {% if page.leaflet == true %}
+            <script src="https://unpkg.com/{{ site.leaflet }}/dist/leaflet.js"></script>
+        {% endif %}        
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="ArchES Logo" width="190" height="66" /></a></div>
+				{% include navigation.html %}
+			</div>
+		</header>
+		{{ content }}
+		<footer>
+			<div class="container">
+				<p class="copyright">• &copy; {{ site.time | date: '%Y' }} ArchES Computing Systems •</p>
+			</div>
+		</footer>
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+	</body>
 </html>
