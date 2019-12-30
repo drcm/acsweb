@@ -1,0 +1,43 @@
+---
+title: Contact Us
+heading: Please contact us for additional information
+
+map:
+  address: "100 Front St. East, Toronto ON, Canada"
+
+leaflet: true
+latlng: [43.649797, -79.371250]
+mlatlng: [43.649797, -79.371250]
+zoom: 17
+---
+
+
+<div class="contact-box">
+	<form action="https://getsimpleform.com/messages?form_api_token=458025322c35d09decb8b4a3f3ba2302" method="post" class="contact-form">
+        <input type='hidden' name='redirect_to' value='http://archescomputing.com/contact-success/>' />
+		<label for="name">Full Name</label>
+		<input type="text" name="name" id="name" placeholder="Enter your name..." />
+
+		<label for="email">Email Address</label>
+		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
+
+		<label for="message">Message</label>
+		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+
+		<input type="submit" value="Send Message" />
+	</form>
+
+	<div class="contact-details">
+		<h3 class="editable">Address</h3>
+		<address>{{ page.map.address | replace: ", ", ", <br>" }}</address>
+
+		<h3 class="editable">Phone</h3>
+        <p>416.639.0926</p>
+
+		<h3 class="editable">Email</h3>
+		<p><a href="mailto:info@archescomputing.com">info@archescomputing.com</a></p>
+	</div>
+</div>
+
+{% include leaflet.html %}
+

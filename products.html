@@ -1,0 +1,51 @@
+---
+title: Products
+heading: High-Performance FPGA Applications
+
+products_table:
+    - name: Level II Market Data Feed Handler
+      text: The ArchES Level II Market Data Feed Handler is an ultra low-latency FPGA-based
+        feed handler. All protected Canadian marketplaces are supported. The Feed Handlers 
+        natively support multi-line arbitration, recovery for dropped packets, detailed 
+        logging, as well as an interactive runtime management console. The events which trigger
+        BBOs, as well as the BBO output format are highly configurable.
+
+    - name: Consolidated NBBO
+      text: The NBBO platform is an extension to the Level II Market Data Feed Handler system 
+        providing a consolidated view of the Canadian marketplace. It processes all exchange-specific
+        BBO messages and notifies users when a NBBO trigger has been activated. 
+
+    - name: Custom Trading FPGA Platform.
+      text: The Custom Trading FPGA Platform is a fully-integrated trading system on chip. High-speed
+        networking, market data feeds, FIX connectivity, and core strategy blocks are all embedded 
+        directly on the FPGA. End users specify the structure of the trading algorithm, but 
+        retain control of the exact runtime implementation.
+
+    - name: Risk Engine
+      text: The ArchES Risk Engine is a FPGA-based Risk Engine that continuously monitors all 
+        submitted and executed orders to assess risk exposure in real-time. A configurable set
+        of rules and the current market conditions are evaluated against every received
+        order. Whenever a rule violation is detected, the order is immediately rejected
+        back to the issuer. Arbitrary levels of logging are provided, as is an interactive
+        runtime monitoring and management console.
+
+    - name: Smart Order Router
+      text: The ArchES Smart Order Router is a FPGA-based SOR that intelligently routes orders
+        to one or more destination exchanges based on current market conditions and a configurable
+        set of user-defined routing rules. The SOR integrates the Level II Market Data Feed Handler,
+        NBBO, and Risk Engine to provide an extremely low-latency, realtime routing solution.
+        Detailed logging and an interactive runtime monitoring and management console is provided.
+---
+
+
+{% for product in page.products_table %}
+    {% assign mod = forloop.index | modulo: 2 %}
+        {% if mod == 0 %}
+            <div class="container info even">
+        {% else %}
+            <div class="container info odd">
+        {% endif %}
+                <h3 style="color: {{ site.arches_blue }}">{{ product.name }}</h3>
+                <p>{{ product.text }} </p>
+            </div>
+{% endfor %}
