@@ -2,8 +2,12 @@
 	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
 	color: #fff;
 	text-align: center;
-	margin: 0;
-	padding: 100px 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);    
 
 	h2 {
 		margin-bottom: 50px;
